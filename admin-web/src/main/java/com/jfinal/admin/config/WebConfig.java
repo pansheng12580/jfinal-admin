@@ -11,7 +11,6 @@ import com.jfinal.plugin.activerecord.ActiveRecordPlugin;
 import com.jfinal.plugin.activerecord.dialect.MysqlDialect;
 import com.jfinal.plugin.druid.DruidPlugin;
 import com.jfinal.template.Engine;
-import org.beetl.core.Configuration;
 import org.beetl.core.GroupTemplate;
 import org.beetl.ext.jfinal3.JFinal3BeetlRenderFactory;
 

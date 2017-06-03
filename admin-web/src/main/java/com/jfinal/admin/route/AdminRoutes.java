@@ -1,6 +1,5 @@
 package com.jfinal.admin.route;
 
-import com.jfinal.admin.Interceptor.AdminInterceptor;
 import com.jfinal.admin.module.admin.controller.AdminIndexController;
 import com.jfinal.config.Routes;
 
@@ -10,10 +9,10 @@ import com.jfinal.config.Routes;
 public class AdminRoutes extends Routes {
     @Override
     public void config() {
-        setBaseViewPath("/view/admin");
 
         //addInterceptor(new AdminInterceptor());//添加admin拦截器
 
         add("/admin", AdminIndexController.class);
+
     }
 }

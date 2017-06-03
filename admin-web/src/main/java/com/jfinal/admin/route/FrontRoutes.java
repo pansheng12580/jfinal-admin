@@ -9,7 +9,7 @@ import com.jfinal.config.Routes;
 public class FrontRoutes extends Routes {
     @Override
     public void config() {
-        setBaseViewPath("/view/front");
-        add("/", FrontIndexController.class);
+
+        add("/", FrontIndexController.class,"front");
     }
 }

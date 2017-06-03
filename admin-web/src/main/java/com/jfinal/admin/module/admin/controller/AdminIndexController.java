@@ -1,7 +1,6 @@
 package com.jfinal.admin.module.admin.controller;
 
 import com.jfinal.admin.base.BaseAdminController;
-import com.jfinal.admin.module.admin.service.AdminIndexService;
 import com.jfinal.aop.Clear;
 import com.jfinal.plugin.activerecord.Db;
 import com.jfinal.plugin.activerecord.Record;
@@ -18,8 +17,9 @@ public class AdminIndexController extends BaseAdminController {
 
     public void index(){
         List<Record> recordList = Db.find("select * from t_test");
-//        renderText("admin index start");
-        renderJson(recordList);
+        setAttr("recordList",recordList);
+        setAttr("name","pansheng");
+        render("index.html");
     }
 
     @Clear //清除拦截器

@@ -8,6 +8,6 @@ import com.jfinal.admin.base.BaseFrontController;
 public class FrontIndexController extends BaseFrontController {
 
     public void index(){
-        renderText("front index start!");
+        render("index.html");
     }
 }
