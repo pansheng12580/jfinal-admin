@@ -17,7 +17,7 @@ public class _JfinalGenerator {
     //获取数据源
     public static DataSource getDataSource() {
         //任意时空调用prop
-        Prop p = PropKit.use("db_config.txt");
+        Prop p = PropKit.use("db_config.properties");
         DruidPlugin dp = new DruidPlugin(p.get("jdbcUrl"),p.get("user"), p.get("password"));
         dp.start();
         return dp.getDataSource();
