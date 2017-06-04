@@ -1,0 +1,32 @@
+.sidebar-menu .treeview-menu>li>a {
+	padding: 5px 5px 5px 35px;
+	display: block;
+	font-size: 16px;
+}
+
+.skin-blue .sidebar-menu>li:hover>a, .skin-blue .sidebar-menu>li.active>a {
+	font-size: 16px;
+}
+
+
+
+
+
+
+.box .form-horizontal .box-body .form-group{
+	margin-bottom:0;
+}
+
+.box .box-header{
+	padding:0;
+
+}
+
+.box .form-horizontal .box-footer{
+	padding:0 10px 10px 10px;
+	border-top:none;
+}
+
+.box .with-border .breadcrumb{
+	margin-bottom: 0;
+}

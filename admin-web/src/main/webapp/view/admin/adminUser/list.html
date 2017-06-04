@@ -1,0 +1,152 @@
+@ layout("/admin/common/_layout.html"){
+
+<!-- Info boxes -->
+<!--<div class="row">-->
+<!-- Horizontal Form -->
+<div class="box box-solid">
+    <div class="with-border">
+        <ol class="breadcrumb">
+            <li><a href="${basepath}/admin"><i class="fa fa-home fa-fw"></i> 首页</a></li>
+            <li class="active">用户管理</li>
+            <li class="active">用户管理</li>
+        </ol>
+    </div>
+    <!-- /.box-header -->
+    <!-- form start -->
+    <form class="form-horizontal">
+        <div class="box-body">
+            <div class="form-group col-sm-4 col-xs-6">
+                <label for="adminUserName" class="col-sm-3 control-label">用户名</label>
+
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="adminUserName" placeholder="模糊查询">
+                </div>
+            </div>
+            <div class="form-group col-sm-4 col-xs-6">
+                <label for="inputPassword3" class="col-sm-3 control-label">Password</label>
+
+                <div class="col-sm-9">
+                    <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                </div>
+            </div>
+            <div class="form-group col-sm-4 col-xs-6">
+                <label for="inputPassword3" class="col-sm-3 control-label">Password</label>
+
+                <div class="col-sm-9">
+                    <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                </div>
+            </div>
+        </div>
+
+        <!-- /.box-body -->
+        <div class="box-footer">
+            <!--<button type="submit" class="btn btn-default">Cancel</button>-->
+            <button type="submit" class="btn bg-light-blue color-palette pull-right">查询</button>
+        </div>
+        <!-- /.box-footer -->
+    </form>
+
+
+    <div class="box">
+        <div class="box-header">
+            <!--<h3 class="box-title">Data Table With Full Features</h3>-->
+            <button type="button" class="btn bg-light-blue color-palette  margin">新增</button>
+            <button type="button" class="btn bg-light-blue color-palette  margin">修改</button>
+            <button type="button" class="btn bg-red color-palette  margin">删除</button>
+        </div>
+        <!-- /.box-header -->
+        <div class="box-body">
+            <div id="example1_wrapper" class="dataTables_wrapper form-inline dt-bootstrap">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <table id="example1" class="table table-bordered table-striped dataTable" role="grid"
+                               aria-describedby="example1_info">
+                            <thead>
+                            <tr role="row">
+                                <th class="sorting_asc" tabindex="0" aria-controls="example1" rowspan="1" colspan="1"
+                                    aria-sort="ascending"
+                                    aria-label="Rendering engine: activate to sort column descending"
+                                    style="width: 181px;">Rendering engine
+                                </th>
+                                <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1"
+                                    aria-label="Browser: activate to sort column ascending" style="width: 224px;">
+                                    Browser
+                                </th>
+                                <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1"
+                                    aria-label="Platform(s): activate to sort column ascending" style="width: 197px;">
+                                    Platform(s)
+                                </th>
+                                <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1"
+                                    aria-label="Engine version: activate to sort column ascending"
+                                    style="width: 154px;">Engine version
+                                </th>
+                                <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1"
+                                    aria-label="CSS grade: activate to sort column ascending" style="width: 112px;">CSS
+                                    grade
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr role="row" class="odd">
+                                <td class="sorting_1">Gecko</td>
+                                <td>Firefox 1.0</td>
+                                <td>Win 98+ / OSX.2+</td>
+                                <td>1.7</td>
+                                <td>A</td>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <td class="sorting_1">Gecko</td>
+                                <td>Netscape Navigator 9</td>
+                                <td>Win 98+ / OSX.2+</td>
+                                <td>1.8</td>
+                                <td>A</td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <td class="sorting_1">Gecko</td>
+                                <td>Mozilla 1.0</td>
+                                <td>Win 95+ / OSX.1+</td>
+                                <td>1</td>
+                                <td>A</td>
+                            </tr>
+                            </tbody>
+                            <tfoot>
+                            <tr>
+                                <th rowspan="1" colspan="1">Rendering engine</th>
+                                <th rowspan="1" colspan="1">Browser</th>
+                                <th rowspan="1" colspan="1">Platform(s)</th>
+                                <th rowspan="1" colspan="1">Engine version</th>
+                                <th rowspan="1" colspan="1">CSS grade</th>
+                            </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.box-body -->
+    </div>
+
+</div>
+<!--</div>-->
+<!-- /.row -->
+
+
+<script type="text/JavaScript">
+    $(function () {
+        $('#example1').DataTable({
+            "paging": true,
+            "lengthChange": true,
+            "searching": false,
+            "ordering": false,
+            "info": true,
+            "autoWidth": false
+
+//            "processing": true,
+//            "serverSide": true,
+//            "ajax": "../server_side/scripts/server_processing.php"
+        });
+    });
+</script>
+
+
+@ }
