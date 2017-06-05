@@ -37,7 +37,7 @@
 
         <!-- /.box-body -->
         <div class="box-footer">
-            <button type="submit" class="btn bg-light-blue color-palette pull-right">查询</button>
+            <button type="submit" class="btn btn-sm bg-light-blue color-palette pull-right">查询</button>
         </div>
         <!-- /.box-footer -->
     </form>
@@ -46,105 +46,104 @@
     <div class="box">
         <div class="box-header">
             <!--<h3 class="box-title">Data Table With Full Features</h3>-->
-            <button type="button" class="btn bg-light-blue color-palette  margin">新增</button>
-            <button type="button" class="btn bg-light-blue color-palette  margin">修改</button>
-            <button type="button" class="btn bg-red color-palette  margin">删除</button>
+            <button type="button" class="btn btn-sm btn-primary  margin">新增</button>
+            <button type="button" class="btn btn-sm btn-primary  margin">修改</button>
+            <button type="button" class="btn btn-sm btn-danger margin">删除</button>
         </div>
         <!-- /.box-header -->
         <div class="box-body box-admin-table">
-            <div id="example1_wrapper" class="dataTables_wrapper form-inline dt-bootstrap">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <table id="example1" class="table table-bordered table-striped dataTable" role="grid"
-                               aria-describedby="example1_info">
-                            <thead>
-                            <tr role="row">
-                                <th class="sorting_asc" tabindex="0" aria-controls="example1" rowspan="1" colspan="1"
-                                    aria-sort="ascending"
-                                    aria-label="Rendering engine: activate to sort column descending"
-                                    style="width: 181px;">
-                                    <div class="checkbox">
-                                        <label>
-                                            <input type="checkbox"> 全选
-                                        </label>
-                                    </div>
-                                </th>
-                                <th class="sorting_asc" tabindex="0" aria-controls="example1" rowspan="1" colspan="1"
-                                    aria-sort="ascending"
-                                    aria-label="Rendering engine: activate to sort column descending"
-                                    style="width: 181px;">Rendering engine
-                                </th>
-                                <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1"
-                                    aria-label="Browser: activate to sort column ascending" style="width: 224px;">
-                                    Browser
-                                </th>
-                                <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1"
-                                    aria-label="Platform(s): activate to sort column ascending" style="width: 197px;">
-                                    Platform(s)
-                                </th>
-                                <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1"
-                                    aria-label="Engine version: activate to sort column ascending"
-                                    style="width: 154px;">Engine version
-                                </th>
-                                <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1"
-                                    aria-label="CSS grade: activate to sort column ascending" style="width: 112px;">CSS
-                                    grade
-                                </th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr role="row" class="odd">
-                                <td><input type="checkbox"/></td>
-                                <td class="sorting_1">Gecko</td>
-                                <td>Firefox 1.0</td>
-                                <td>Win 98+ / OSX.2+</td>
-                                <td>1.7</td>
-                                <td>A</td>
-                            </tr>
-                            <tr role="row" class="odd">
-                                <td><input type="checkbox"/></td>
-                                <td class="sorting_1">Gecko</td>
-                                <td>Netscape Navigator 9</td>
-                                <td>Win 98+ / OSX.2+</td>
-                                <td>1.8</td>
-                                <td>A</td>
-                            </tr>
-                            <tr role="row" class="even">
-                                <td><input type="checkbox"/></td>
-                                <td class="sorting_1">Gecko</td>
-                                <td>Mozilla 1.0</td>
-                                <td>Win 95+ / OSX.1+</td>
-                                <td>1</td>
-                                <td>A</td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
+            <table id="example1" class="table table-bordered table-striped">
+                <thead>
+                <tr>
+                    <th>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox"> 全选
+                            </label>
+                        </div>
+                    </th>
+                    <th>Rendering engine</th>
+                    <th>Browser</th>
+                    <th>Platform(s)</th>
+                    <th>Engine version</th>
+                    <th>CSS grade</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><input type="checkbox"/></td>
+                    <td>Gecko</td>
+                    <td>Firefox 1.0</td>
+                    <td>Win 98+ / OSX.2+</td>
+                    <td>1.7</td>
+                    <td>A</td>
+                    <td>
+                        <button type="button" class="btn btn-xs btn-primary">查看</button>
+                        <button type="button" class="btn btn-xs btn-danger" data-toggle="modal" data-target="#modal-danger">
+                            加入黑名单
+                        </button>
+                    </td>
+                </tr>
+                <tr role="row" class="odd">
+                    <td><input type="checkbox"/></td>
+                    <td>Gecko</td>
+                    <td>Netscape Navigator 9</td>
+                    <td>Win 98+ / OSX.2+</td>
+                    <td>1.8</td>
+                    <td>A</td>
+                    <td>
+                        <button type="button" class="btn btn-xs btn-primary">查看</button>
+                        <button type="button" class="btn btn-xs btn-danger ">加入黑名单</button>
+                    </td>
+                </tr>
+                <tr role="row" class="even">
+                    <td><input type="checkbox"/></td>
+                    <td>Gecko</td>
+                    <td>Mozilla 1.0</td>
+                    <td>Win 95+ / OSX.1+</td>
+                    <td>1</td>
+                    <td>A</td>
+                    <td>
+                        <button type="button" class="btn btn-xs btn-primary">查看</button>
+                        <button type="button" class="btn btn-xs btn-danger">加入黑名单</button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
         </div>
         <!-- /.box-body -->
+        @ include("/admin/common/_paginate.html",{tableId:'example1'}){}
     </div>
+
+
+    <!--删除模态框-->
+    <div id="modal-danger" class="modal modal-danger fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">删除</h4>
+                </div>
+                <div class="modal-body">
+                    <p>你确认执行删除操作吗？删除后数据不可恢复!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline pull-left" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-outline">删除</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
 
 </div>
 
 
-<script type="text/JavaScript">
-    $(function () {
-        $('#example1').DataTable({
-            "paging": true,
-            "lengthChange": false,
-            "searching": false,
-            "ordering": true,
-            "info": true,
-            "autoWidth": false
 
-//            "processing": true,
-//            "serverSide": true,
-//            "ajax": "../server_side/scripts/server_processing.php"
-        });
-    });
-</script>
 
 
 @ }
